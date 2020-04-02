@@ -1,0 +1,25 @@
+{
+  "name": "scratch-convert",
+  "version": "1.0.0",
+  "description": "Converts SB2 to SB3",
+  "main": "convert.js",
+  "scripts": {
+    "convert": "node convert.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GSE-CCL/scratch-convert.git"
+  },
+  "author": "Creative Computing Lab",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/GSE-CCL/scratch-convert/issues"
+  },
+  "homepage": "https://github.com/GSE-CCL/scratch-convert",
+  "dependencies": {
+    "colors": "^1.4.0",
+    "command-line-args": "^5.1.1",
+    "command-line-usage": "^6.1.0",
+    "scratch-vm": "^0.2.0-prerelease.20200319175700"
+  }
+}
