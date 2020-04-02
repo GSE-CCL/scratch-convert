@@ -6,7 +6,7 @@ Converts Scratch 2 to Scratch 3 JSON representations using [LLK/scratch-vm](http
 
 1. Make sure you've installed Node.js and NPM.
 2. Navigate the terminal to the downloaded repository.
-3. Run nom install.
+3. Run npm install.
 4. You should be all set to run the code as described below.
 
 ## Usage

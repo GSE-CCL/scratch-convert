@@ -38,6 +38,7 @@ let convert = function(input_path, output_path, options) {
                         "for success rate of", (success.success / success.total),
                         "\n"
                        );
+            process.nextTick(process.exit);
         }
     }).catch(() => {
         console.log("Trouble with".red, input_path);
@@ -48,6 +49,7 @@ let convert = function(input_path, output_path, options) {
                         "for success rate of", (success.success / success.total),
                         "\n"
                        );
+            process.nextTick(process.exit);
         }
     });
 };
