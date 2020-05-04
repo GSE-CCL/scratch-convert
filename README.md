@@ -30,3 +30,24 @@ Convert all projects in directory SRC, saving new ones to root directory DEST, p
 Convert projects A, B, C, and those in the directory SRC, to root directory DEST, without preserving directory structures:
 
 ```node convert.js -ud DEST A B C SRC```
+
+## Convert server
+
+To use this code as a server to convert one project at a time, run `node app.js`.
+
+Then you can POST to `/convert` with your Scratch 2 project JSON as the only data, with header `application/json`.
+
+You'll receive the Scratch 3 JSON in return.
+
+As a Python example:
+
+```python
+import json
+import requests
+
+with open("test.json") as f:
+    sb2 = json.load(f)
+
+r = requests.post("http://localhost:3000/convert", json=sb2)
+print(r.text)
+```
