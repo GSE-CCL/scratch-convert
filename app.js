@@ -2,8 +2,9 @@ const colors = require("colors");
 const express = require("express");
 const fs = require("fs");
 const VirtualMachine = require("scratch-vm");
+const process = require("process");
 
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 
 /* Converts an individual project from SB2 to SB3.
  * Takes in an sb2 data structure and options.
