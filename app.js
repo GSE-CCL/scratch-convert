@@ -6,6 +6,9 @@ const process = require("process");
 
 const PORT = process.env.PORT || 3000;
 
+// Mute consoles because of scratch-vm's overuse thereof
+console.log = () => {};
+
 /* Converts an individual project from SB2 to SB3.
  * Takes in an sb2 data structure and options.
  * 

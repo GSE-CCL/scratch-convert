@@ -4,6 +4,7 @@
   "description": "Converts SB2 to SB3",
   "main": "convert.js",
   "scripts": {
+    "server": "node app.js",
     "convert": "node convert.js"
   },
   "repository": {
